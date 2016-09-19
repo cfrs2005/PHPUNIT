@@ -1,14 +1,8 @@
-language php
-
-
+language: php
 php:
-
-    - 5.3
-    - 5.4
-
+  - 5.3
+  - 5.4
 before_script:
-
-    - curl -s http:///getcomposer.org/installer | php
-    - php composer.har install
-
-script: phpunit
+  - composer install
+  - cd tests
+script: phpunit -v
