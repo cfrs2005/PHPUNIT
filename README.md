@@ -1,2 +1,2 @@
 # PHPUNIT
-phpUnit+composer+travls
+phpUnit+composer+travis
