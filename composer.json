@@ -1,0 +1,15 @@
+{
+    "name": "aj/travis",
+    "authors": [
+        {
+            "name": "aj",
+            "email": "a@80aj.com"
+        }
+    ],
+    "require": {
+        "phpunit/phpunit": "^4.8"
+    },
+    "autoload" : {
+        "psr-0" : { "JobWeb" :"src/"}
+    }
+}
