@@ -28,13 +28,20 @@ class CalculatorTest extends PHPUnit_Framework_TestCase
         $this->calc = null;
     }
 
+    /**
+     * is instance
+     */
     public function testInstanceOf()
     {
         $this->assertInstanceOf('JobWeb\Calculator', $this->calc);
     }
 
-    public function testInvalArgumentisProperlyThrown()
+    /**
+     * throw Exception
+     */
+    public function testException()
     {
+        $this->setExpectedException(InvalidArgumentException::class);
         $this->calc->add('A', 2);
     }
 }
